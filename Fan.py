@@ -4,7 +4,7 @@ class Fan:
         # ■ A private bool data field named on that specifies whether the fan is on (the default is False).
         # ■ A private float data field named radius that specifies the radius of the fan.
         # ■ A private string data field named color that specifies the color of the fan.
-    def fan(self, speed, on, radius, color):
+    def __init__(self, speed, on, radius, color):
         self.__speed = speed
         self.__on = on
         self.__radius = radius
@@ -23,11 +23,22 @@ class Fan:
     def get_color(self):
         return self.__color
     
-    #and mutator(setters)  methods for all four data fields.
+    #and mutator(setters) methods for all four data fields.
     def set_speed(self, speed):
         self.__speed = speed
 
-    
-    
-        # ■ A constructor that creates a fan with the specified speed (default SLOW), radius (default 5), color (default blue), and on (default False).
-        # Write a test program named TestFan that creates two Fan objects. For the first object, assign the maximum speed, radius 10, color yellow, and turn it on. Assign medium speed, radius 5, color blue, and turn it off for the second object. Display each object’s speed, radius, color, and on properties.
+    def set_on(self, on):
+        self.__on = on
+
+    def set_radius(self, radius):
+        self.__radius = radius
+
+    def set_color(self, color):
+        self.__color = color
+
+    def show_fan(self):
+        print(self.__speed, self.__on, self.__radius, self.__color)
+    # ■ A constructor that creates a fan with the specified speed (default SLOW), radius (default 5), color (default blue), and on (default False).
+default_fan = Fan("3", "on", "5", "blue")
+default_fan.show_fan()
+    # Write a test program named TestFan that creates two Fan objects. For the first object, assign the maximum speed, radius 10, color yellow, and turn it on. Assign medium speed, radius 5, color blue, and turn it off for the second object. Display each object’s speed, radius, color, and on properties.
