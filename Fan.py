@@ -9,6 +9,25 @@ class Fan:
         self.__on = on
         self.__radius = radius
         self.__color = color
-        # ■ The accessor(getters)  and mutator(setters)  methods for all four data fields.
+
+    # ■ The accessor(getters)
+    def get_speed(self):
+        return self.__speed
+    
+    def get_on(self):
+        return self.__on
+    
+    def get_radius(self):
+        return self.__radius
+    
+    def get_color(self):
+        return self.__color
+    
+    #and mutator(setters)  methods for all four data fields.
+    def set_speed(self, speed):
+        self.__speed = speed
+
+    
+    
         # ■ A constructor that creates a fan with the specified speed (default SLOW), radius (default 5), color (default blue), and on (default False).
         # Write a test program named TestFan that creates two Fan objects. For the first object, assign the maximum speed, radius 10, color yellow, and turn it on. Assign medium speed, radius 5, color blue, and turn it off for the second object. Display each object’s speed, radius, color, and on properties.
