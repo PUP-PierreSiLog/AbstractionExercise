@@ -48,5 +48,5 @@ class Fan:
         self.__color = str(color)
 
     def show_fan(self):
-        print("The fan's speed is", self.__speed, ". It's current status is",self.__on, ".T he fan has a radius of", self.__radius, "and has a color",self.__color)
+        print("The fan's speed is", self.__speed, ". It's current status is",self.__on, ".The fan has a radius of", self.__radius, "and has a color",self.__color)
     # ■ A constructor that creates a fan with the specified speed (default SLOW), radius (default 5), color (default blue), and on (default False).
