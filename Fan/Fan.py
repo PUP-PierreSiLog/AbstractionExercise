@@ -28,6 +28,10 @@ class Fan:
 
     def set_on(self, on):
         self.__on = bool(on)
+        if on == True:
+            self.__on = "On"
+        else:
+            self.__on = "Off"
     
     def set_radius(self, radius):
         self.__radius = float(radius)
