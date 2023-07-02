@@ -9,4 +9,4 @@ class Pet:
         self.__name = name
 
     def get_name (self):
-        return self.__name
+        print("The name of the pet is ", self.__name)
