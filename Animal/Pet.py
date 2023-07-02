@@ -6,7 +6,6 @@ class Pet:
     
     def set_name(self, name):
         self.__name = name
-        name = input("Please input name here")
 
     def get_name (self):
         print("The name of the pet is ", self.__name)
