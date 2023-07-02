@@ -7,7 +7,7 @@ default_fan = fan(3, "on", 5, "blue")
 default_fan.set_speed(3)
 default_fan.set_radius(10)
 default_fan.set_color("yellow")
-fan_1 = default_fan.set_on(1)
+default_fan.set_on(1)
 default_fan.show_fan()
 #FOR FAN 2
 default_fan.set_speed(2)

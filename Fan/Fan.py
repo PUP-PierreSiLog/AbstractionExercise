@@ -25,6 +25,14 @@ class Fan:
     #and mutator(setters) methods for all four data fields.
     def set_speed(self, speed):
         self.__speed = int(speed)
+        if speed == 3:
+            self.__speed = "High"
+        elif speed == 2:
+            self.__speed = "Medium"
+        elif speed == 1:
+            self.__speed = "Low"
+        else:
+            self.__speed = "Invalid Value"
 
     def set_on(self, on):
         self.__on = bool(on)
@@ -40,5 +48,5 @@ class Fan:
         self.__color = str(color)
 
     def show_fan(self):
-        print("The fan's speed is", self.__speed, ".It's current status is",self.__on, ".The fan has a radius of", self.__radius, "and has a color",self.__color)
+        print("The fan's speed is", self.__speed, ". It's current status is",self.__on, ".T he fan has a radius of", self.__radius, "and has a color",self.__color)
     # ■ A constructor that creates a fan with the specified speed (default SLOW), radius (default 5), color (default blue), and on (default False).
