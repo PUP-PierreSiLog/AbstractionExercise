@@ -5,10 +5,10 @@ class Fan:
         # ■ A private float data field named radius that specifies the radius of the fan.
         # ■ A private string data field named color that specifies the color of the fan.
     def __init__(self, speed, on, radius, color):
-        self.__speed = speed
-        self.__on = on
-        self.__radius = radius
-        self.__color = color
+        self.__speed = int(speed)
+        self.__on = bool(on)
+        self.__radius = float(radius)
+        self.__color = str(color)
     # ■ The accessor(getters)
     def get_speed(self):
         return self.__speed
@@ -21,18 +21,19 @@ class Fan:
     
     def get_color(self):
         return self.__color
+    
     #and mutator(setters) methods for all four data fields.
     def set_speed(self, speed):
-        self.__speed = speed
+        self.__speed = int(speed)
 
     def set_on(self, on):
-        self.__on = on
-
+        self.__on = bool(on)
+    
     def set_radius(self, radius):
-        self.__radius = radius
+        self.__radius = float(radius)
 
     def set_color(self, color):
-        self.__color = color
+        self.__color = str(color)
 
     def show_fan(self):
         print("The fan's speed is", self.__speed, ".It's current status is",self.__on, ".The fan has a radius of", self.__radius, "and has a color",self.__color)
