@@ -12,7 +12,12 @@ class Pet:
 
     def set_age(self, age):
         self.__age = age
-        
 
     def get_name (self):
         print("The name of the pet is ", self.__name)
+
+    def get_age(self):
+        print("The age of the pet is ", self.__age)
+    
+    def get_type(self):
+        print("The type of pet is ", self.__animal_type)
